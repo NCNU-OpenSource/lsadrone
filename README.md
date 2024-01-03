@@ -1,13 +1,5 @@
 # LSA期末專題
 
-| 內容 | 負責人 | 條件 |
-| -------- | -------- | --- |
-| 無人機指令部署 | 侯 | |
-| 主機-無人機串接 | 顏 | |
-| OpenCV影像辨識 | 羅 、楊| |
-| 簡報、資料整理 | 陳、楊 | |
-
-排程
 # FINAL-PROJECT-README-TEMPLATE
 
 ## Concept Development
