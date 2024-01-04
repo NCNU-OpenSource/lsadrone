@@ -17,6 +17,8 @@
 
 ![Untitled](https://hackmd.io/_uploads/ryLof7QuT.jpg)
 * **程式檔案描述**
+  * find_node.py
+  >   找出圖片的每個節點，並印出來
   * pose.json
   >   每張圖片人體的各個座標點
   * pose_codrone.py
