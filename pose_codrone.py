@@ -168,6 +168,7 @@ if __name__ == "__main__":
                 print("Error: Could not read frame.")
                 continue  # 继续下一次循环
             if ret:
+                cv2.putText(img, str(score), (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 10, (0, 0, 255), 2) # 畫座標
                 imgRGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
                 result = pose.process(imgRGB)
 
@@ -194,14 +195,13 @@ if __name__ == "__main__":
             image = cv2.resize(image, (imgWidth, imgHeight))
             
             # 在整個畫面添加圖片殘影
-            img = cv2.addWeighted(img, 0.5, image, 1, -10)
+            img = cv2.addWeighted(img, 1, image, 0.5, -10)
 
             cv2.imshow('Full Screen', img)
             j = judge(my_points, random_image_index)
 
             if j:
                 score += 1
-                cv2.putText(img, str(score), (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 10, (0, 0, 255), 2) # 畫座標
                 print(j)
                 move.append(j)
                 if len(move) == 1:
