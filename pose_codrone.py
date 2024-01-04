@@ -4,7 +4,6 @@ import json
 import random
 import time
 from codrone_edu.drone import *
-import video_pose
 import keyboard
 
 # 後退
