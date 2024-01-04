@@ -143,6 +143,7 @@ if __name__ == "__main__":
         drone.move(1)
         print(i)
     score = 0
+    prev_random_image_index = None
     while True:
         while True:
             random_image_index = random.randint(11, 17)
